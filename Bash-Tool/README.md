@@ -58,3 +58,41 @@ IP addresses: [redacted]
 - Show more details about the Linux distribution.
 - Let the user save the report to a file.
 - Let the user choose which information to display.
+
+## Linux Security Checker
+
+### Tool Name
+Linux Security Checker (`linuxsecuritychecker.sh`)
+
+### Objective
+A simple Bash script that reports a few basic security settings on this Linux computer.
+
+### Features
+- Reports the UFW firewall status, or says if UFW is not installed.
+- Reports whether the SSH service is running.
+- Checks whether the current user can read `/etc/shadow` without showing its contents.
+- Displays help with `--help` and reports unknown options.
+
+### Requirements
+- Linux with Bash and `systemctl`.
+- UFW and `sudo` access for the firewall status check.
+
+### How to Run
+Open a terminal in the `Bash-Tool` folder and run the script with Bash.
+
+### Example Usage
+- Normal run: `bash linuxsecuritychecker.sh`
+- Help: `bash linuxsecuritychecker.sh --help`
+- Unknown option: `bash linuxsecuritychecker.sh --wrong`
+
+### Example Output
+The results depend on the computer’s settings. The script reports the firewall status, SSH service status, and whether the current user can read `/etc/shadow`.
+
+### Challenges Faced
+- Understanding that checking for UFW and checking its status are different steps.
+- Placing the help and unknown-option checks before the security checks.
+
+### Future Improvements
+- Check for more basic Linux security settings.
+- Support other firewall tools.
+- Let the user save the report to a file.
