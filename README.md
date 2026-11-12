@@ -1,3 +1,4 @@
+# CYBERSECURITY TOOLS : PHASE 1 AND PHASE 2
 # Phase 1: Cybersecurity Tools
 
 A collection of small cybersecurity and automation tools built for Phase 1.
@@ -18,3 +19,8 @@ The Linux Security Checker only reports status; it doesn’t change firewall set
 
 See the README inside each tool’s folder for its requirements and run instructions.
 
+## Phase 2: BASH TOOL Linux Security Checker (upgraded)
+
+An upgraded version of the Phase 1 Bash security checker. It reports
+PASS / WARN / FAIL for each check and returns an exit code, so it can
+be used in scripts. See [Phase-2/linux-security-checker](Phase-2/linux-security-checker).
