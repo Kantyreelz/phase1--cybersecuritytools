@@ -1,4 +1,4 @@
-# CYBERSECURITY TOOLS : PHASE 1 AND PHASE 2
+# 🛡️ CYBERSECURITY TOOLS : PHASE 1 AND PHASE 2
 # Phase 1: Cybersecurity Tools.
 
 A collection of small cybersecurity and automation tools built for Phase 1.
