@@ -23,8 +23,9 @@ See the README inside each tool’s folder for its requirements and run instruct
 
 An upgraded version of the Phase 1 Bash security checker. It runs 8 read-only checks (firewall, SSH service, `/etc/shadow` permissions, SSH settings, extra UID 0 accounts, empty passwords, risky open ports, and pending updates). Each check reports PASS, WARN, FAIL, or INFO, every warning or failure comes with a fix tip, and the exit code (0, 1, 2) lets scripts read the result. `--save` writes a timestamped report. See [Phase-2/linux-security-checker](Phase-2/linux-security-checker/README.md).
 
-## Repository Structure
+## 🔐 Repository Structure
 
+```text
 phase1--cybersecuritytools/
 ├── README.md
 ├── LICENSE
@@ -39,7 +40,7 @@ phase1--cybersecuritytools/
         ├── linuxsecuritychecker.sh
         ├── README.md
         └── screenshots/
-
+```
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
