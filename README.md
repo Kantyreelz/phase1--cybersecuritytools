@@ -1,5 +1,5 @@
 # CYBERSECURITY TOOLS : PHASE 1 AND PHASE 2
-# Phase 1: Cybersecurity Tools
+# Phase 1: Cybersecurity Tools.
 
 A collection of small cybersecurity and automation tools built for Phase 1.
 
@@ -14,13 +14,32 @@ A collection of small cybersecurity and automation tools built for Phase 1.
 - `Python-Tool/` — Python log analyzer, sample log, documentation, and screenshots.
 - `Bash-Tool/` — Bash system information tool, Linux security checker, documentation, and screenshots.
 
-The Linux Security Checker only reports status; it doesn’t change firewall settings or read the contents of /etc/shadow.
+In Phase 1, the Linux Security Checker only reports status; it doesn't change firewall settings or read the contents of /etc/shadow.
 
 
 See the README inside each tool’s folder for its requirements and run instructions.
 
-## Phase 2: BASH TOOL Linux Security Checker (upgraded)
+## Phase 2: Linux Security Checker (upgraded)
 
-An upgraded version of the Phase 1 Bash security checker. It reports
-PASS / WARN / FAIL for each check and returns an exit code, so it can
-be used in scripts. See [Phase-2/linux-security-checker](Phase-2/linux-security-checker).
+An upgraded version of the Phase 1 Bash security checker. It runs 8 read-only checks (firewall, SSH service, `/etc/shadow` permissions, SSH settings, extra UID 0 accounts, empty passwords, risky open ports, and pending updates). Each check reports PASS, WARN, FAIL, or INFO, every warning or failure comes with a fix tip, and the exit code (0, 1, 2) lets scripts read the result. `--save` writes a timestamped report. See [Phase-2/linux-security-checker](Phase-2/linux-security-checker/README.md).
+
+## Repository Structure
+
+phase1--cybersecuritytools/
+├── README.md
+├── LICENSE
+├── Phase_1_Report.pdf
+├── Python-Tool/
+│   └── Python log analyzer, sample log, documentation, screenshots
+├── Bash-Tool/
+│   └── System information tool, Linux security checker (Phase 1),
+│       documentation, screenshots
+└── Phase-2/
+    └── linux-security-checker/
+        ├── linuxsecuritychecker.sh
+        ├── README.md
+        └── screenshots/
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
