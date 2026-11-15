@@ -223,7 +223,7 @@ The `reports` folder is created with private permissions (700) and each report f
 Summary: 6 passed, 2 warnings, 0 failures
 ```
 
-![Checker running on Kali Linux](screenshots/checker-output.png)
+![Checker running on Kali Linux](screenshots/checker_result.png)
 
 ## 💻 Technologies Used
 
